@@ -71,6 +71,7 @@ For more terminal shell goodness, please also see this list's sister list [Aweso
     - [AppleScript](#applescript)
     - [Basics](#basics)
     - [Clipboard](#clipboard)
+    - [Date and Time](#date-and-time)
     - [FileVault](#filevault)
     - [Information/Reports](#informationreports)
     - [Kernel Extensions](#kernel-extensions)
@@ -1064,6 +1065,18 @@ pbpaste > whatever.txt
 #### Sort and Strip Duplicate Lines from Clipboard Content
 ```bash
 pbpaste | sort | uniq | pbcopy
+```
+
+### Date and Time
+
+#### List timezone
+```bash
+systemsetup -listtimezones
+```
+
+#### Update timezone
+```bash
+systemsetup -settimezone Asia/Shanghai
 ```
 
 ### FileVault
